@@ -1,0 +1,31 @@
+.navbar{
+    height: 5rem;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    background-color: #385170;
+    font-family: 'Aileron';
+    display: flex;
+    align-items: center;
+    padding:0 2rem 0 2rem;
+}
+
+.navbar h2{
+    color: #ececec;
+    font-size: 1.8rem;
+}
+
+.navbar-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    font-size: 1.4rem;
+    margin-left: 15%;
+}
+
+.navbar-links a{
+    font-family: 'Aileron';
+    text-decoration: none;
+    color: #ececec;
+}
