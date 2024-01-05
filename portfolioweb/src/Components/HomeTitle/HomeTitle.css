@@ -10,18 +10,29 @@
     color: #fff;
 	font-size: 8em;
 	position: absolute;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -60%);
     width: 60rem;
 }
 
-.hometitle p{
+.system-print {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    transform: translate(-50%, 700%);
     color: #fff;
-	font-size: 2em;
-	position: absolute;
-	transform: translate(-50%, 300%);
-    width: 60rem;
+    font-size: 1.2em;
     font-weight: 500;
+    text-align: center;
+    min-width: 200vh;
+    white-space: nowrap; 
 }
+
+.system-print h3 {
+    margin: 0 5px; 
+    flex-shrink: 0;
+}
+
 
 .hometitle h2:nth-child(1) {
 	color: transparent;
@@ -71,9 +82,24 @@
         font-size: 6em;
     }
 
-    .hometitle p{
+    .hometitle div{
         transform: translate(-50%, 600%);
-        font-size: 1.4em;
+        font-size: 1em;
     }
 }
 
+
+
+.greeting {
+    opacity: 0;
+    animation: fadeInOut 6s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    25%, 75% {
+        opacity: 1;
+    }
+}

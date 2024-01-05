@@ -7,9 +7,13 @@ function Navbar() {
         e.preventDefault(); 
         alert('Photos section will be added soon');
     };
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
     return (
         <nav className='navbar'>
-            <h2>Vasco</h2>
+            <h2 onClick={scrollToTop}>Vasco</h2>
             <div className="navbar-links">
                 <a href="#about">About Me</a>
                 <a href="#photos" onClick={handlePhotosClick}>Photos</a>
