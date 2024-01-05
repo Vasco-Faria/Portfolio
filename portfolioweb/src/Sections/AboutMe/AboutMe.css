@@ -1,0 +1,11 @@
+.AboutMe-Section{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.AboutMe-Section h2{
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+    margin-top: 5rem;
+}

@@ -4,7 +4,7 @@ import './HomeTitle.css'
 const greetings = [
     "Welcome to my Website Portfolio!", // English
     "Bem-vindo ao meu Portfólio de Website!", // Portuguese
-    "¡Bienvenido a mi Portafolio de Sitio Web!", // Spanish
+    "Bienvenido a mi Portafolio de Sitio Web!", // Spanish
     "Bienvenue dans mon Portfolio de Site Web!", // French
     "Willkommen in meinem Website-Portfolio!", // German
     "Benvenuto nel mio Portfolio Sito Web!" // Italian
