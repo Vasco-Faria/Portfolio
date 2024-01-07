@@ -28,7 +28,7 @@ const HomeTitle = () => {
             <h2>Vasco Faria</h2>
 		    <h2>Vasco Faria</h2>
             <div className='system-print'>
-                <h3>System<span style={{color: "white"}}>.</span><span style={{color: "#e06c75"}}>out</span>.<span style={{color: "#61afef"}}>println</span>("</h3>
+                <h3>System<span style={{color: "white"}}>.</span><span style={{color: "#e06c75"}}>out</span>.<span style={{color: "#9fd3c7"}}>println</span>("</h3>
                     <h3 className="greeting">{greetings[currentGreeting]}</h3>
                 <h3 className="closure">");</h3>
             </div>

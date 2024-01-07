@@ -8,9 +8,9 @@
 
 .hometitle h2{
     color: #fff;
-	font-size: 8em;
+	font-size: 9em;
 	position: absolute;
-	transform: translate(-50%, -60%);
+	transform: translate(-50%, -70%);
     width: 60rem;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .hometitle h2:nth-child(2) {
-	color: white;
+	color: #9fd3c7;
 	animation: animate 4s ease-in-out infinite;
 }
 

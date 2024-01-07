@@ -1,7 +1,8 @@
 .navbar{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     height: 8vh;
-    width: 100%;
+    min-height: 3rem;
+    width: 80%;
     max-width: 100%;
     position: absolute;
     font-weight: 600;
@@ -10,10 +11,15 @@
     display: flex;
     align-items: center;
     padding:0 2rem 0 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 40px;
 }
 
 .navbar h2{
-    color: #ececec;
+    color: #9fd3c7;
     font-size: 1.8rem;
 }
 
@@ -60,8 +66,8 @@
     content: '';
     right: 0;
     top: 0;
-    border-top: 3px solid white;
-    border-right: 3px solid white;
+    border-top: 3px solid #9fd3c7;
+    border-right: 3px solid #9fd3c7;
     transform: translate(-100%, 50%);
   }
   
@@ -69,8 +75,8 @@
     content: '';
     left: 0;
     bottom: 0;
-    border-bottom: 3px solid white;
-    border-left: 3px solid white;
+    border-bottom: 3px solid #9fd3c7;
+    border-left: 3px solid #9fd3c7;
     transform: translate(100%, -50%)
   }
   
