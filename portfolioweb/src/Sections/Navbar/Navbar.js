@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Navbar.css'
 
 function Navbar() {
 
     const handlePhotosClick = (e) => {
         e.preventDefault(); 
-        alert('Photos section will be added soon');
+        alert('Timeline section will be added soon');
     };
 
     const scrollToTop = () => {
@@ -15,8 +16,8 @@ function Navbar() {
         <nav className='navbar'>
             <h2 onClick={scrollToTop}>Vasco</h2>
             <div className="navbar-links">
-                <a href="#about">About Me</a>
-                <a href="#photos" onClick={handlePhotosClick}>Photos</a>
+                <Link activeClass="active" smooth spy to="AboutMe">About Me</Link>
+                <a href="#photos" onClick={handlePhotosClick}>Timeline</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact Me</a>
             </div>
