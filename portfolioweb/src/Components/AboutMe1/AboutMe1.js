@@ -1,12 +1,14 @@
 import React from 'react';
 import AboutImage from '../AboutImage/AboutImage';
+import img1 from '../../Assets/IMG_0519.jpg'
 import './AboutMe1.css';
 
 function AboutMe1() {
+
     return (
         <>
             <div className='about-left'>
-                <AboutImage/>
+                <AboutImage imageUrl={img1} />
                 </div>
                 <div className='about-right'>
                 <div className='description'>
