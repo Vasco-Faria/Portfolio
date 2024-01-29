@@ -23,6 +23,7 @@
 .navbar h2{
     color: #9fd3c7;
     font-size: 1.8rem;
+    padding-left: 2rem;
 }
 
 .navbar h2:hover{
