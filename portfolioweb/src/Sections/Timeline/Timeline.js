@@ -8,6 +8,7 @@ const Timeline = () =>{
     return (
 
         <div className="Timeline-section">
+            <h2>TimeLine not decided yet</h2>
         </div>
     )
 }
