@@ -7,7 +7,7 @@ const PopUp = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setIsVisible(true);
-    }, 5000);
+    }, 7000);
 
     return () => {
       
@@ -34,6 +34,46 @@ const PopUp = () => {
     }, 500);
   };
 
+
+  const [quote, setQuote] = useState({ content: '', author: '' });
+
+  useEffect(() => {
+    const fetchQuote = async () => {
+      try {
+        const lastFetchTime = localStorage.getItem('lastFetchTime');
+        const currentTime = new Date().getTime();
+        const currentDay = new Date().toLocaleDateString();
+
+        
+        if (!lastFetchTime || localStorage.getItem('lastDay') !== currentDay) {
+          const response = await fetch('https://api.quotable.io/random');
+          if (!response.ok) {
+            throw new Error('Failed to fetch quote');
+          }
+          const data = await response.json();
+          setQuote({ content: data.content, author: data.author });
+
+          
+          localStorage.setItem('lastFetchTime', currentTime);
+          localStorage.setItem('lastDay', currentDay);
+          localStorage.setItem('quoteContent', data.content);
+          localStorage.setItem('quoteAuthor', data.author);
+        } else {
+          
+          const storedContent = localStorage.getItem('quoteContent');
+          const storedAuthor = localStorage.getItem('quoteAuthor');
+          if (storedContent && storedAuthor) {
+            setQuote({ content: storedContent, author: storedAuthor });
+          }
+        }
+      } catch (error) {
+        console.error(error.message);
+      }
+    };
+
+    fetchQuote();
+  }, []);
+
   return isVisible ? (
     <div className="popup">
       <h2>Quote of the day</h2>
@@ -41,7 +81,8 @@ const PopUp = () => {
         &times;
       </a>
       <div className="content">
-        Thank you for popping me out of that button, but now I'm done, so you can close this window.
+      <p className='popup-content'>"{quote.content}"</p>
+      <p className='popup-author'>- {quote.author}</p>
       </div>
     </div>
   ) : null;

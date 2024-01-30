@@ -1,5 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+        --white: #fff;
+        --black: #323135;
+        --crystal: #a8dadd;
+        --columbia-blue: #cee9e4;
+        --midnight-green: #01565b;
+        --yellow: #e5f33d;
+        --timeline-gradient: rgba(206, 233, 228, 1) 0%, rgba(206, 233, 228, 1) 50%,
+          rgba(206, 233, 228, 0) 100%;
+      }
+
+      
+
+
 .Timeline-section{
         min-height: 100vh;
         width: 100%;
         animation: fadeIn 1s ease-in-out forwards;
 }
+
+
+.Timeline-section .TimeLine-title{
+        color:white;
+        font-family: "Poppins", sans-serif;
+        font-size: 2.5em;
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+}
+
+.info h2 {
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .timeline {
+        position: relative;
+        white-space: nowrap;
+        max-width: 1400px;
+        padding: 0 10px;
+        margin: 5rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 320px auto;
+        grid-gap: 20px;
+      }
+      
+      
+      .timeline .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 40px;
+        color: var(--white);
+        background-color: #385170;
+        box-shadow: rgba(0, 0, 0, 0.10) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        white-space: normal;
+        border-radius: 10px;
+        align-items: center;
+      }
+      
+      
+      
+      .timeline ol::-webkit-scrollbar {
+        height: 15px;
+      }
+      
+      .timeline ol::-webkit-scrollbar-thumb,
+      .timeline ol::-webkit-scrollbar-track {
+        border-radius: 92px;
+      }
+      
+      .timeline ol::-webkit-scrollbar-thumb {
+        background: var(--midnight-green);
+      }
+      
+      .timeline ol::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      .timeline ol {
+        font-size: 0;
+        padding: 250px 0;
+        transition: all 1s;
+        overflow-x: scroll;
+        scrollbar-color: #9fd3c7 transparent;
+      }

@@ -4,10 +4,7 @@ import './Navbar.css'
 
 function Navbar() {
 
-    const handlePhotosClick = (e) => {
-        e.preventDefault(); 
-        alert('Timeline section will be added soon');
-    };
+  
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
@@ -17,7 +14,7 @@ function Navbar() {
             <h2 onClick={scrollToTop}>Vasco</h2>
             <div className="navbar-links">
                 <Link activeClass="active" smooth spy to="AboutMe">About Me</Link>
-                <a href="#photos" onClick={handlePhotosClick}>Timeline</a>
+                <Link activeClass="active" smooth spy to="timeline">Timeline</Link>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact Me</a>
             </div>
