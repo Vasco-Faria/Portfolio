@@ -20,6 +20,7 @@
     justify-content: center;
     flex-direction: column;
     margin-right: 10rem;
+    
 }
 
 
@@ -28,6 +29,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    white-space: 'nowrap';
 
 }
 
@@ -51,6 +53,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    white-space: 'nowrap';
 
 }
 
@@ -75,6 +78,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    white-space: 'nowrap';
 
 }
 
@@ -99,6 +103,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    white-space: 'nowrap';
 
 }
 

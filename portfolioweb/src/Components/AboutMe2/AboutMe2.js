@@ -11,9 +11,9 @@ function AboutMe2() {
                 </div>
                 <div className='about-right'>
                 <div className='description'>
-                        <div className='name'>
+                        <div className='name' style={{ whiteSpace: 'nowrap' }} >
                             <p>Currently:</p>
-                            <p>Studying Computer Science Engineering BSc Degree</p>
+                            <p >Studying Computer Science Engineering BSc Degree</p>
                         </div>
                         <div className='age'>
                             <p>University:</p>
@@ -23,7 +23,7 @@ function AboutMe2() {
                             <p>Fluent in:</p>
                             <p>Portuguese, English, Spanish, French</p>
                         </div>
-                        <div className='principles' style={{"fontSi ze":"1.4rem"}}>
+                        <div className='principles' style={{"fontSize":"1.4rem"}}>
                             <p>Hobbies:</p>
                             <p>Gym, Football</p>
                         </div>

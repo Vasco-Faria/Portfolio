@@ -1,0 +1,5 @@
+.projects-section{
+    min-height: 100vh;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out forwards;
+}
