@@ -12,25 +12,25 @@
       }
 
 
-li {
+.li {
     position: relative;
     display: inline-block;
     list-style-type: none;
-    width: 160px;
+    width: 200px;
     height: 5px;
     background: var(--white);
     scroll-snap-align: start;
   }
   
-  li:last-child {
+  .li:last-child {
     width: 400px;
   }
   
-  li:not(:first-child) {
+  .li:not(:first-child) {
     margin-left: 14px;
   }
   
-  li::after {
+  .li::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -44,10 +44,10 @@ li {
     z-index: 1;
   }
   
-  li div {
+  .li div {
     position: absolute;
     left: calc(100% + 7px);
-    width: 280px;
+    width: 300px;
     padding: 15px;
     font-size: 1rem;
     white-space: normal;
@@ -56,7 +56,7 @@ li {
     border-radius: 0 10px 10px 10px;
   }
   
-  li div::before {
+  .li div::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -66,23 +66,23 @@ li {
     border-style: solid;
   }
   
-  li:nth-child(odd) div {
+  .li:nth-child(odd) div {
     top: -16px;
     transform: translateY(-100%);
     border-radius: 10px 10px 10px 0;
   }
   
-  li:nth-child(odd) div::before {
+  .li:nth-child(odd) div::before {
     top: 100%;
     border-width: 8px 8px 0 0;
     border-color: var(--white) transparent transparent transparent;
   }
   
-  li:nth-child(even) div {
+  .li:nth-child(even) div {
     top: calc(100% + 16px);
   }
   
-  li:nth-child(even) div::before {
+  .li:nth-child(even) div::before {
     top: -8px;
     border-width: 8px 0 0 8px;
     border-color: transparent transparent transparent var(--white);
@@ -94,4 +94,19 @@ li {
     font-weight: bold;
     margin-bottom: 8px;
     color: #385170;
+  }
+
+
+  .header-timeitem{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .header-timeitem img{
+    max-width: 150px;
+    height: 80px;
+    margin-right: 10px;
   }

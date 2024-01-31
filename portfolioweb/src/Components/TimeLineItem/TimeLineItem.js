@@ -1,11 +1,15 @@
 import React from 'react';
 import './TimeLineItem.css';
+import AEPJBLogo from '../../Assets/TImelinePhotos/AEPJB.jpeg';
 
-const TimelineItem = ({ year, content }) => {
+const TimelineItem = ({ year, content,logo }) => {
   return (
-    <li>
+    <li className='li'>
       <div>
-        <time>{year}</time> 
+        <section className='header-timeitem'>
+          <time>{year}</time> 
+          {logo && <img src={logo} alt='image' />}
+        </section>
         {content}
       </div>
     </li>

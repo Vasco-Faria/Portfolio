@@ -15,8 +15,8 @@ function Navbar() {
             <div className="navbar-links">
                 <Link activeClass="active" smooth spy to="AboutMe">About Me</Link>
                 <Link activeClass="active" smooth spy to="timeline">Timeline</Link>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact Me</a>
+                <Link activeClass="active" smooth spy to="projects">Projects</Link>
+                <Link activeClass="active" smooth spy to="ContactMe">ContactMe</Link>
             </div>
         </nav>
     );

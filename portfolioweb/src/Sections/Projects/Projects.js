@@ -3,8 +3,11 @@ import './Projects.css';
 
 const Projects = () => {
     return (
-        <div  className="projects-section">
-            
+        <div id='projects' className="projects-section">
+            <h2>Projects</h2>
+            <div className='projects'>
+                    
+            </div>
         </div>
     );
 };

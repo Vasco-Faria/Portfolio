@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import './Timeline.css';
 import TimelineItem from "../../Components/TimeLineItem/TimeLineItem";
+import AEPJBLogo from '../../Assets/TImelinePhotos/AEPJB.jpeg';
+import ContinenteLogo from '../../Assets/TImelinePhotos/continente.png';
+import UAlogo from '../../Assets/TImelinePhotos/UA.png';
 
 
 const Timeline = () =>{
 
     const timelineData = [
         { year: "2003", content: 'I was born on March 9, 2003. We all start from here...' },
-        { year: "2018-2021", content: 'Scientific High School Degree' },
-        { year: "2021-Currently", content: 'Computer Science Engineering BSc Degree' },
+        { year: "2018-2021", content: 'Scientific High School Degree', logo:AEPJBLogo},
+        { year: "2021-Currently", content: 'Computer Science Engineering BSc Degree', logo: UAlogo },
+        { year: 'Jul-Sept 2023' , content:'Summer reinforcement as cashier/store operator', logo:ContinenteLogo},
         { year: "Present", content: 'Enjoying each day as if it were the last'}
-        
       ];
 
       const [maxHeight, setMaxHeight] = useState(0);
@@ -47,7 +50,7 @@ const Timeline = () =>{
             </div>
             <ol>
                 {timelineData.map((item, index) => (
-                <TimelineItem key={index} year={item.year} content={item.content} style={{ height: `${maxHeight}px` }} />
+                <TimelineItem key={index} year={item.year} content={item.content} logo={item.logo} style={{ height: `${maxHeight}px` }} />
                 ))}
             </ol>
             </section>

@@ -2,5 +2,161 @@
     min-height: 100vh;
     width: 100%;
     animation: fadeIn 1s ease-in-out forwards;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 
+
+.ContactMe-section h2{
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+
+
+.contactme{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 60%;
+    width: 75%;
+    align-self: center;
+
+}
+
+
+.first-column{
+  
+    height: 100%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 50% 50%; 
+}
+
+
+.image-and-name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-container {
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.image-and-name h3{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+}
+
+.mycvs {
+   justify-content: center;
+    align-items: center;
+}
+
+.mycvs h3{
+    color: white;
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+
+.mycvs p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.buttons-downloads{
+    background-color: yellow;
+    height: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-footer {
+    
+}
+
+
+.second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.second-column h3{
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+
+.second-column ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.second-column ul li{
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.second-column ul li{
+    position: relative;
+    display: block;
+    height: 100px;
+    width:100px;
+    background-color: #142d4c;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    border: 4px solid white;
+    font-size: 3em;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.second-column ul li:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--color);
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+.second-column ul li:hover:before{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px var(--color);
+}
+
+.second-column ul li:hover{
+    color: var(--color);
+    box-shadow: 0px 0px 8px var(--color);
+    text-shadow: 0px 0px 8px var(--color);
+    border: transparent;
 }
