@@ -16,7 +16,16 @@
 .projects{
     width: 100%;
     height: 90%;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 70% 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.project-cards{
+    min-height: 50vh;
+    width: 70%;
+    background-color: yellow;
+    margin-top: 5rem;
+    align-self: center;
 }

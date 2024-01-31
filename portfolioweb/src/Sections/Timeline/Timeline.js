@@ -6,6 +6,7 @@ import ContinenteLogo from '../../Assets/TImelinePhotos/continente.png';
 import UAlogo from '../../Assets/TImelinePhotos/UA.png';
 
 
+
 const Timeline = () =>{
 
     const timelineData = [

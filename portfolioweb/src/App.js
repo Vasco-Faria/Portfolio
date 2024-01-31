@@ -8,13 +8,14 @@ import Timeline from './Sections/Timeline/Timeline';
 import PopUp from './Components/PopUp/PopUp';
 import Projects from './Sections/Projects/Projects';
 import ContactMe from './Sections/ContactMe/ContactMe';
+import BackToTop from './Components/BackToTop/BackToTop';
 
 function App() {
 
 
   return (
     <div className="App">
-      
+      <BackToTop/>
       <PopUp/>
       <Navbar/>
       <Home/>

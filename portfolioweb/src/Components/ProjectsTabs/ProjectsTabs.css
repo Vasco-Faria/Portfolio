@@ -1,0 +1,44 @@
+.project-tabs{
+    width: 30%;
+    height: 5vh;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    border: 5px solid white;
+}
+
+
+
+.project-tabs div{
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    height: 80%;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+.project-tabs div:hover{
+    cursor: pointer;
+    color: #9fd3c7;
+    text-decoration: underline;
+    text-decoration-skip-ink: none; 
+}
+
+.project-tabs div:not(:first-child) {
+    border-left: 3px solid white;
+}
+
+.project-tabs div:first-child{
+    border-radius: 50px 0 0 50px;
+}
+
+.project-tabs div:last-child{
+    border-radius: 0 50px 50px 0;
+}

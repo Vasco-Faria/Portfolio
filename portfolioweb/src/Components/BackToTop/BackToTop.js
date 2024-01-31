@@ -22,12 +22,17 @@ const BackToTop = () => {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
     return (
-        <div className={`back-to-top-button ${isVisible ? 'visible' : ''}`}>
-        <Link activeClass="active" smooth spy to="Snow Container">
-            Back to Top
+        <Link className={`back-to-top-button ${isVisible ? 'visible' : ''}`} activeClass="active" smooth spy to="Snow Container">
+            <button onClick={scrollToTop}>&#8593; Back to Top</button>
         </Link>
-        </div>
     );
 }
 
