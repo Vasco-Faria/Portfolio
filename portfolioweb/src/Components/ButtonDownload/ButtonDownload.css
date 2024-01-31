@@ -1,0 +1,106 @@
+
+.button-cvpt {
+
+    --background: #2B3044;
+    --background-hover: #1E2235;
+    --text: #fff;
+    --icon: #fff;
+    --particle: #fff;
+    color:white;
+    background-color:  #142d4c;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 40%;
+    min-height: 3rem;
+    max-height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    font-family: inherit;
+    font-weight: 600;
+    justify-content: center;
+    border:transparent;
+    font-size: 1.2rem;
+}
+
+
+.button-cvpt:hover{
+    cursor: pointer;
+    scale: 0.85;
+    color: #9fd3c7;
+}
+
+
+
+
+.button-cvpt .icon {
+    --arrow-y: 0;
+    --arrow-rotate: 135;
+    --arrow-top: 10px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8px;
+    pointer-events: none;
+}
+
+.button-cvpt .icon .dot {
+    border-radius: 50%;
+    background: #fff;
+    background: var(--particle);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 4px;
+}
+
+.button-cvpt .icon .arrow,
+.button-cvpt .icon .line {
+    position: absolute;
+    z-index: 1;
+}
+
+.button-cvpt .icon .arrow {
+    left: 11px;
+    top: 4px;
+    width: 2px;
+    height: 12px;
+    border-radius: 1px;
+    background: var(--icon);
+    transform: translateY(calc(var(--arrow-y) * 1px)) translateZ(0);
+    color: white;
+}
+
+.button-cvpt .icon .arrow:before,
+.button-cvpt .icon .arrow:after {
+    content: '';
+    width: 2px;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    top: var(--arrow-top);
+    border-radius: 1px;
+    background: inherit;
+    transform-origin: 1px 1px;
+    transform: rotate(var(--r, calc(var(--arrow-rotate) * 1deg)));
+}
+
+.button-cvpt .icon .arrow:after {
+    --r: calc(var(--arrow-rotate) * -1deg);
+}
+
+.button-cvpt .icon .line {
+    width: 24px;
+    height: 24px;
+    display: block;
+    left: 0;
+    top: 7px;
+    fill: none;
+    stroke: var(--icon);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}

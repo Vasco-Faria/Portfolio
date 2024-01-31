@@ -26,7 +26,7 @@ const Home = () => {
     }, []);
   
     return (
-      <div id="snow-container" className="home-section">
+      <div id="snow-container"className="home-section">
         <HomeTitle />
         <div className="snowflakes">{snowflakes.map((snowflake) => snowflake.component)}</div>
       </div>
