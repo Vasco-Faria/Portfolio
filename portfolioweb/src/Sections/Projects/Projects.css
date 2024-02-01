@@ -10,7 +10,7 @@
     font-family: "Poppins", sans-serif;
     font-size: 2.5em;
     padding-top: 5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .projects{
@@ -21,11 +21,19 @@
 }
 
 
-
-.project-cards{
-    min-height: 50vh;
+.project-cards {
+    min-height: 60vh;
     width: 70%;
-    background-color: yellow;
-    margin-top: 5rem;
+    margin-top: 6rem;
     align-self: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); 
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1500px) {
+    .project-cards {
+        grid-template-columns: repeat(auto-fill, minmax(48%, 1fr)); 
+    }
 }

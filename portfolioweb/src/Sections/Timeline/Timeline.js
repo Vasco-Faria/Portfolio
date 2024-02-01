@@ -4,6 +4,7 @@ import TimelineItem from "../../Components/TimeLineItem/TimeLineItem";
 import AEPJBLogo from '../../Assets/TImelinePhotos/AEPJB.jpeg';
 import ContinenteLogo from '../../Assets/TImelinePhotos/continente.png';
 import UAlogo from '../../Assets/TImelinePhotos/UA.png';
+import UdemyLogo from '../../Assets/TImelinePhotos/Udemy-Logo.png';
 
 
 
@@ -14,6 +15,7 @@ const Timeline = () =>{
         { year: "2018-2021", content: 'Scientific High School Degree', logo:AEPJBLogo},
         { year: "2021-Currently", content: 'Computer Science Engineering BSc Degree', logo: UAlogo },
         { year: 'Jul-Sept 2023' , content:'Summer reinforcement as cashier/store operator', logo:ContinenteLogo},
+        { year: "2023", content: 'Udemy Full Stack Web Development Bootcamp', logo:UdemyLogo },
         { year: "Present", content: 'Enjoying each day as if it were the last'}
       ];
 

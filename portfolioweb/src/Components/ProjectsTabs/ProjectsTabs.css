@@ -21,6 +21,7 @@
     align-items: center;
     text-align: center;
     padding-top: 5px;
+    font-weight: 600;
 }
 
 
@@ -29,6 +30,7 @@
     color: #9fd3c7;
     text-decoration: underline;
     text-decoration-skip-ink: none; 
+
 }
 
 .project-tabs div:not(:first-child) {
@@ -42,3 +44,9 @@
 .project-tabs div:last-child{
     border-radius: 0 50px 50px 0;
 }
+
+.tab.active {
+    color: #9fd3c7;
+}
+
+

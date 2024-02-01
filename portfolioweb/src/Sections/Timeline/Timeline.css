@@ -63,6 +63,7 @@
       
       .timeline ol::-webkit-scrollbar {
         height: 15px;
+        border-radius: 50px;
       }
       
       .timeline ol::-webkit-scrollbar-thumb,
@@ -72,13 +73,16 @@
       
       .timeline ol::-webkit-scrollbar-thumb {
         background: var(--midnight-green);
+        border-radius: 50px;
       }
       
       .timeline ol::-webkit-scrollbar-track {
         background: transparent;
+        border-radius: 50px;
       }
       
       .timeline ol {
+        border-radius: 50px;
         font-size: 0;
         padding: 250px 0;
         transition: all 1s;
