@@ -28,8 +28,12 @@ const ProjectCard = ({ project }) => {
       <div className='project-description'>
         <p>{project.description}</p>
       </div>
-      <div>
-          
+      <div className='project-tech'>
+        {project.tech?.map((tech, index) => (
+            <div key={index} style={{ marginLeft: index !== 0 ? '0.7rem' : '0' }}>
+              {tech}
+            </div>
+          ))}
       </div>
     </div>
   );

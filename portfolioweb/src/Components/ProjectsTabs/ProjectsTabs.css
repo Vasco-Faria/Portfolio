@@ -1,6 +1,6 @@
 .project-tabs{
-    width: 30%;
-    height: 5vh;
+    width: 40%;
+    min-height: 6vh;
     align-self: center;
     justify-self: center;
     display: flex;
@@ -18,10 +18,11 @@
     font-family: "Poppins", sans-serif;
     height: 80%;
     width: 50%;
-    align-items: center;
     text-align: center;
-    padding-top: 5px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -30,6 +31,8 @@
     color: #9fd3c7;
     text-decoration: underline;
     text-decoration-skip-ink: none; 
+    text-underline-offset: 10px; 
+    text-decoration-thickness: 5px;
 
 }
 
@@ -50,3 +53,9 @@
 }
 
 
+@media (max-width: 1024px) {
+    
+    .project-tabs{
+        width: 60%;
+    }
+}
