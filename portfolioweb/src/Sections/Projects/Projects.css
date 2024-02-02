@@ -24,12 +24,14 @@
 .project-cards {
     min-height: 60vh;
     width: 70%;
-    margin-top: 6rem;
+    margin-top: 5rem;
     align-self: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); 
     gap: 20px;
     justify-content: space-evenly;
+    align-items: stretch;
+    grid-auto-rows: 1fr;
 }
 
 @media (max-width: 1500px) {

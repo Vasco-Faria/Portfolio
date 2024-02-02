@@ -175,3 +175,12 @@ height: 2.2rem;
       opacity: 0;
     }
   }
+
+
+
+  @media (max-width: 1500px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+}

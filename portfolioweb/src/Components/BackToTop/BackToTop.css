@@ -27,6 +27,7 @@
 
   .back-to-top-button button:hover{
     cursor: pointer;
+    color: #9fd3c7;
   }
   
   .back-to-top-button.visible {

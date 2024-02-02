@@ -9,14 +9,18 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-    
 }
 
 
 .project-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
+    border: 1px solid #9fd3c7;
+}
+
+.project-card:hover h3 {
+    color: #9fd3c7;
+}
 
 
 .title-github{
@@ -26,47 +30,53 @@
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     align-items: center; 
 }
 
 .title-github h3{
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
+    width: 80%;
+    text-align: start;
 }
 
 
 .project-description{
     margin-top: 1rem;
-    margin-left: 0.8rem;
+    margin-left: 1rem;
     text-align: start;
     text-justify: auto;
-    min-height: 45%;
-    width: 80%;
+    min-height: 50%;
+    width: 90%;
     align-self: start;
     color: white;
 }
 
 .project-description p{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.5;
+    text-align: justify;
 }
 
 
 .project-tech{
     display: flex;
     flex-direction: row;
-    height: 20%;
+    height: 10%;
     width: 75%;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .project-tech div{
     padding: 0.3rem 0.3rem;
     color: white;
+    font-size: 0.8rem;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    
 }
 
 
