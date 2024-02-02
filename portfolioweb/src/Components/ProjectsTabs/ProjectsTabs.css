@@ -53,9 +53,17 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (min-width: 781px) and(max-width: 1300px) {
     
     .project-tabs{
         width: 60%;
+    }
+}
+
+
+@media (max-width: 780px) {
+    
+    .project-tabs{
+        width: 80%;
     }
 }

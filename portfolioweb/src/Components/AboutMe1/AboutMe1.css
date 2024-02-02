@@ -121,3 +121,249 @@
     color:#ececec;
     
 }
+
+
+
+@media (max-width: 779px) {
+
+    .description{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0rem;
+
+    }
+
+    .about-right{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        white-space: 'nowrap';
+    
+    }
+    
+    .name p:nth-child(1) {
+       font-size: 1.4rem;
+       font-family: "Poppins", sans-serif;
+       color: #9fd3c7;
+       font-weight: 600;
+    }
+    
+    .name p:nth-child(2) {
+        font-size: 1rem;
+        margin-left: 0rem;
+        font-family: "Poppins", sans-serif;
+        color:#ececec;
+        
+    }
+    
+    .age{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        white-space: 'nowrap';
+    
+    }
+    
+    .age p:nth-child(1) {
+       font-size: 1.4rem;
+       font-family: "Poppins", sans-serif;
+       color: #9fd3c7;
+       font-weight: 600;
+    }
+    
+    .age p:nth-child(2) {
+        font-size: 1rem;
+        margin-left: 0rem;
+        font-family: "Poppins", sans-serif;
+        color:#ececec;
+        
+    }
+    
+    
+    .hometown{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        white-space: 'nowrap';
+    
+    }
+    
+    .hometown p:nth-child(1) {
+       font-size: 1.4rem;
+       font-family: "Poppins", sans-serif;
+       color: #9fd3c7;
+       font-weight: 600;
+    }
+    
+    .hometown p:nth-child(2) {
+        font-size: 1rem;
+        margin-left: 0rem;
+        font-family: "Poppins", sans-serif;
+        color:#ececec;
+        
+    }
+    
+    
+    .principles{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        white-space: 'nowrap';
+    
+    }
+    
+    .principles p:nth-child(1) {
+       font-size: 1.4rem;
+       font-family: "Poppins", sans-serif;
+       color: #9fd3c7;
+       font-weight: 600;
+    }
+    
+    .principles p:nth-child(2) {
+        font-size: 1.2rem;
+        margin-left: 0rem;
+        font-family: "Poppins", sans-serif;
+        color:#ececec
+        ;
+
+        
+    }
+    
+}
+
+
+@media (min-width: 780px) and (max-width: 1500px) {
+
+    .description{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0rem;
+
+    }
+
+    .about-right{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .name{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        white-space: 'nowrap';
+    
+    }
+    
+    .name p:nth-child(1) {
+       font-size: 1.8rem;
+       font-family: "Poppins", sans-serif;
+       color: #9fd3c7;
+       font-weight: 600;
+    }
+    
+    .name p:nth-child(2) {
+        font-size: 1.4rem;
+        margin-left: 1rem;
+        font-family: "Poppins", sans-serif;
+        color:#ececec;
+        
+    }
+    
+    .age{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        white-space: 'nowrap';
+    
+    }
+    
+    .age p:nth-child(1) {
+       font-size: 1.8rem;
+       font-family: "Poppins", sans-serif;
+       color: #9fd3c7;
+       font-weight: 600;
+    }
+    
+    .age p:nth-child(2) {
+        font-size: 1.4rem;
+        margin-left: 1rem;
+        font-family: "Poppins", sans-serif;
+        color:#ececec;
+        
+    }
+    
+    
+    .hometown{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        white-space: 'nowrap';
+    
+    }
+    
+    .hometown p:nth-child(1) {
+       font-size: 1.8rem;
+       font-family: "Poppins", sans-serif;
+       color: #9fd3c7;
+       font-weight: 600;
+    }
+    
+    .hometown p:nth-child(2) {
+        font-size: 1.4rem;
+        margin-left: 1rem;
+        font-family: "Poppins", sans-serif;
+        color:#ececec;
+        
+    }
+    
+    
+    .principles{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        white-space: 'nowrap';
+    
+    }
+    
+    .principles p:nth-child(1) {
+       font-size: 1.8rem;
+       font-family: "Poppins", sans-serif;
+       color: #9fd3c7;
+       font-weight: 600;
+    }
+    
+    .principles p:nth-child(2) {
+        font-size: 1.4rem;
+        margin-left: 1rem;
+        font-family: "Poppins", sans-serif;
+        color:#ececec
+        ;
+
+        
+    }
+    
+    
+
+
+}
