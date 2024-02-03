@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
-import React, { useState,useEffect } from 'react';
+import React from 'react';
 import Navbar from './Sections/Navbar/Navbar';
 import Home from './Sections/Home/Home';
 import AboutMe from './Sections/AboutMe/AboutMe';

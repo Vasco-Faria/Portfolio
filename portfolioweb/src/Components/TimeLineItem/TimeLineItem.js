@@ -1,6 +1,5 @@
 import React from 'react';
 import './TimeLineItem.css';
-import AEPJBLogo from '../../Assets/TImelinePhotos/AEPJB.jpeg';
 
 const TimelineItem = ({ year, content,logo }) => {
   return (

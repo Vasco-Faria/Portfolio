@@ -7,7 +7,7 @@ const PopUp = () => {
 
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
+    setTimeout(() => {
       setIsVisible(true);
     }, 7000);
 
@@ -80,7 +80,7 @@ const PopUp = () => {
   return isVisible ? (
     <div className={`popup ${window.innerWidth < 1300 ? 'overlay' : ''}`}>
       <h2>Quote of the day</h2>
-      <a className="close" onClick={handleModalClose}>
+      <a href="#" className="close" onClick={handleModalClose}>
         &times;
       </a>
       <div className="content">

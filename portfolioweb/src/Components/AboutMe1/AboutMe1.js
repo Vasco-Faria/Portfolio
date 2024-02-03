@@ -1,8 +1,7 @@
 import React from 'react';
 import AboutImage from '../AboutImage/AboutImage';
 import './AboutMe1.css';
-import img1 from '../../Assets/IMG_0519.jpg';
-import img2 from '../../Assets/Vasco.jpeg';
+
 
 function AboutMe1({ currently, name, age, hometown, principles, university, fluentIn, hobbies, imageUrl }) {
     return (
