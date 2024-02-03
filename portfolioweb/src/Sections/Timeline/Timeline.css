@@ -89,3 +89,46 @@
         overflow-x: scroll;
         scrollbar-color: #9fd3c7 transparent;
       }
+
+
+
+
+
+@media (max-width: 1200px) {
+  
+  .timeline {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  
+  .timeline .info {
+    padding: 1rem 0;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .info h2{
+    font-size: 1.2rem;
+  }
+  
+  .timeline ol {
+    padding: 15rem 0 ;
+  }
+
+  .timeline ol {
+    border-radius: 50px;
+    font-size: 0;
+    padding: 200px 0;
+    transition: all 1s;
+    overflow-x: scroll;
+    scrollbar-color: #9fd3c7 transparent;
+  }
+
+  .Timeline-section .TimeLine-title{
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+}

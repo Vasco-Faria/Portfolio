@@ -87,3 +87,40 @@
       transform: translateX(100%);
     }
   }
+
+
+@media (max-width: 779px) {
+  .popup{
+    width: 50%;
+    position: fixed;
+    bottom: 10px;
+    align-self:center;
+  }
+
+  .popup h2 {
+    margin-top: 0;
+    color: white;
+    margin-left: 1rem;
+    text-align: start;
+    font-size: 1rem;
+    font-family: Tahoma, Arial, sans-serif;
+    position: relative;
+  }
+
+  .popup-content{
+    font-size: 0.8rem;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+}
+
+@media (min-width:780px) and (max-width: 1300px) {
+
+  .popup{
+    width: 35%;
+  }
+}
+
+
+

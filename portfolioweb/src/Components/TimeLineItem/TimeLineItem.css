@@ -110,3 +110,107 @@
     height: 80px;
     margin-right: 10px;
   }
+
+
+
+  @media (max-width: 779px) {
+    .li {
+      position: relative;
+      display: inline-block;
+      list-style-type: none;
+      width: 180px;
+      height: 5px;
+      background: var(--white);
+      scroll-snap-align: start;
+    }
+    
+    .li:last-child {
+      width: 300px;
+    }
+    
+    .li:not(:first-child) {
+      margin-left: 14px;
+    }
+    
+    .li::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: calc(100% + 1px);
+      bottom: 0;
+      width: 16px;
+      height: 16px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background: #9fd3c7;
+      z-index: 1;
+    }
+    
+    .li div {
+      position: absolute;
+      left: calc(100% + 7px);
+      width: 200px;
+      padding: 15px;
+      font-size: 0.8rem;
+      white-space: normal;
+      color: var(--black);
+      background: var(--white);
+      border-radius: 0 10px 10px 10px;
+    }
+    
+    .li div::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+    
+    .li:nth-child(odd) div {
+      top: -16px;
+      transform: translateY(-100%);
+      border-radius: 10px 10px 10px 0;
+    }
+    
+    .li:nth-child(odd) div::before {
+      top: 100%;
+      border-width: 8px 8px 0 0;
+      border-color: var(--white) transparent transparent transparent;
+    }
+    
+    .li:nth-child(even) div {
+      top: calc(100% + 16px);
+    }
+    
+    .li:nth-child(even) div::before {
+      top: -8px;
+      border-width: 8px 0 0 8px;
+      border-color: transparent transparent transparent var(--white);
+    }
+    
+     time {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #385170;
+    }
+  
+  
+    .header-timeitem{
+      display: flex;
+      align-items: center;
+      width: 90%;
+      justify-content: space-between;
+      padding-bottom: 20px;
+    }
+  
+    .header-timeitem img{
+      max-width: 150px;
+      height: 80px;
+      margin-right: 10px;
+      box-shadow: rgba(0, 0, 0, 0.3);
+    }
+  }

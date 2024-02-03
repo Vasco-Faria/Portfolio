@@ -38,11 +38,11 @@ const ContactMe = () => {
                     </div>
                     <div className='contact-footer'>
                         <div className='email-number-etc'>
-                        <div>
+                        <div >
                             <FontAwesomeIcon icon={faEnvelope} style={{"color":"white", "marginRight":"1rem"}}/>
                             <p>vascomfaria@gmail.com</p>
                         </div>
-                        <div>
+                        <div className="contact-info">
                             <FontAwesomeIcon icon={faPhone}  style={{"color":"white"}} />
                             <p>+351 926635127</p>
                         </div>
@@ -76,6 +76,10 @@ const ContactMe = () => {
                             </li>
                     </ul>
                 </div>
+                <div className='copyright2'>
+                            <p>2024 Vasco Faria</p>
+                            <p>Made with ReactJS</p>
+                        </div>
             </div>
         </div>
     );

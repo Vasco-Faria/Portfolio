@@ -4,12 +4,15 @@ import './PopUp.css';
 const PopUp = () => {
   const [isVisible, setIsVisible] = useState(false);
 
+
+
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setIsVisible(true);
     }, 7000);
 
     return () => {
+      
       
       const popup = document.querySelector('.popup');
       if (popup) {
@@ -75,7 +78,7 @@ const PopUp = () => {
   }, []);
 
   return isVisible ? (
-    <div className="popup">
+    <div className={`popup ${window.innerWidth < 1300 ? 'overlay' : ''}`}>
       <h2>Quote of the day</h2>
       <a className="close" onClick={handleModalClose}>
         &times;
