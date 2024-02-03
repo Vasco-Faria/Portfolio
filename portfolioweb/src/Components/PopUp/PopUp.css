@@ -93,7 +93,7 @@
 
 @media (max-width: 779px) {
   .popup{
-    width: 50%;
+    width: 70%;
     position: fixed;
     bottom: 10px;
     align-self:center;
