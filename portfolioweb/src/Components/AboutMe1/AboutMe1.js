@@ -23,7 +23,7 @@ function AboutMe1({ currently, name, age, hometown, principles, university, flue
                         <p>{currently ? 'Fluent In:' : 'Hometown:'}</p>
                         <p>{currently ? fluentIn : hometown}</p>
                     </div>
-                    <div className={`principles ${currently ? 'currently' : ''}`}>
+                    <div className={`principles ${!currently ? 'currently' : ''}`}>
                         <p>{currently ? 'Hobbies:' : 'Principles:'}</p>
                         <p>{currently ? hobbies : principles}</p>
                     </div>

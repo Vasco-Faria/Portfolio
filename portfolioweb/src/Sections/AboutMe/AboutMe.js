@@ -12,7 +12,7 @@ const AboutMe = () => {
     const [showAboutMe2,setShowAboutMe2] = useState(false)
     const [buttonText, setButtonText] = useState('1/2');
     const [isVisible, setIsVisible] = useState(false);
-    const [setAnimationClass] = useState('slide-in');
+    const [animationClass, setAnimationClass] = useState('slide-in');
 
 
     const [ref, inView] = useInView({
@@ -63,7 +63,7 @@ const AboutMe = () => {
     return (
         <div id="AboutMe" ref={ref} className={`AboutMe-Section ${isVisible ? 'fade-in' : ''}`}>
             <h2>About Me</h2>
-            <div className={`about ${showAboutMe1 ? 'slide-in' : 'slide-out'}`}>
+            <div className={`about ${animationClass} ${showAboutMe1 ? 'slide-in' : 'slide-out'}`}>
                 {showAboutMe1 && <AboutMe1 {...(showAboutMe2 ? aboutMe1Props2 : aboutMe1Props1)} />}
             </div>
             <div className={`about ${showAboutMe2 ? 'slide-in' : 'slide-out'}`}>
