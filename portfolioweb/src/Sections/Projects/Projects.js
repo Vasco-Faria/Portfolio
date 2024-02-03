@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './Projects.css';
 import ProjectTabs from '../../Components/ProjectsTabs/ProjectsTabs';
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 
 const Projects = () => {
-  const projectsData = [
+  const projectsData = useMemo(() => [
     { title: 'Portfolio', description:'Explore my skills, projects, and professional journey through a dynamic personal website. Offers a visual representation of my achievements and capabilities.', githublink: 'https://github.com/Vasco-Faria/Portfolio', tech: ['ReactJS'] },
     { title: 'Online library management platform', description: 'Streamline library tasks with this user-friendly platform. Easily manage and track books,library rooms and ebooks, simplifying the organization of library resources.', githublink: 'https://github.com/Vasco-Faria/Online_Library_Management_System',tech:['ReactJs','Springboot','Python','RabbitMQ',"MySQL","Docker"] },
     { title: 'Chat-Server', description: 'Explore a streamlined Chat Server facilitating user registration, channel joining, and message exchange. Utilizing a custom protocol for communication, it offers a foundation for building chat applications.', githublink: 'https://github.com/Vasco-Faria/CD_Chat_Server' , tech:['Python'] },
@@ -17,9 +17,9 @@ const Projects = () => {
     { title: 'Youtube Database', description: 'Mysql database modeling for the YouTube platform. It enables users to upload, share, and view various types of content. Users can subscribe to others, like, comment on content, create playlists, and even subscribe to the premium service.', githublink: 'https://github.com/Vasco-Faria/BD/tree/main/Projeto_Final/APFT_107323_108536' , tech:["MySQL", "C#"] },
     { title: 'Load Balancer', description: 'Very simples HTTP/TCP Load Balancer. Implemented in Python3, single thread, using OS selector. The code contains 4 classes that implement different strategies to select the next back-end server.', githublink: 'https://github.com/Vasco-Faria/CD_Load_Balancer' , tech:["Python"]},
     { title: 'Coffe Machine Automation', description: 'Python script designed for coffee machine automation, simplifying coffee-making process.', githublink: 'project9.jpg',tech:["Python"] },
-  ];
+  ], []);
 
-  const categories = ['Tab 1', 'Tab 2'];
+  const categories = useMemo(() => ['Tab 1', 'Tab 2'], []);
   const projectsPerPage = 6;
 
   const [activeTab, setActiveTab] = useState(categories[0]);

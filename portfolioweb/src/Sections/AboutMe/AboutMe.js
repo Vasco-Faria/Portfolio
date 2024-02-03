@@ -12,7 +12,7 @@ const AboutMe = () => {
     const [showAboutMe2,setShowAboutMe2] = useState(false)
     const [buttonText, setButtonText] = useState('1/2');
     const [isVisible, setIsVisible] = useState(false);
-    const [animationClass, setAnimationClass] = useState('slide-in');
+    const [setAnimationClass] = useState('slide-in');
 
 
     const [ref, inView] = useInView({

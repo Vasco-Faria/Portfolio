@@ -50,7 +50,7 @@
     text-justify: auto;
     min-height: 50%;
     width: 90%;
-    align-self: start;
+    align-self: flex-start;
     color: white;
 }
 

@@ -80,9 +80,9 @@ const PopUp = () => {
   return isVisible ? (
     <div className={`popup ${window.innerWidth < 1300 ? 'overlay' : ''}`}>
       <h2>Quote of the day</h2>
-      <a href="#" className="close" onClick={handleModalClose}>
+      <button className="close" onClick={handleModalClose}>
         &times;
-      </a>
+      </button>
       <div className="content">
       <p className='popup-content'>"{quote.content}"</p>
       <p className='popup-author'>- {quote.author}</p>

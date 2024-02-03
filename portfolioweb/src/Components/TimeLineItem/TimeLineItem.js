@@ -7,7 +7,7 @@ const TimelineItem = ({ year, content,logo }) => {
       <div>
         <section className='header-timeitem'>
           <time>{year}</time> 
-          {logo && <img src={logo} alt='image' />}
+          {logo && <img src={logo} alt='' />}
         </section>
         {content}
       </div>
