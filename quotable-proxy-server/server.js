@@ -9,6 +9,7 @@ app.use(cors());
 
 app.get('/random-quote', async (req, res) => {
   try {
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Allow requests from any origin
     const response = await fetch('https://api.quotable.io/random');
     const data = await response.json();
     res.json(data);
@@ -17,6 +18,7 @@ app.get('/random-quote', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch quote' });
   }
 });
+
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
