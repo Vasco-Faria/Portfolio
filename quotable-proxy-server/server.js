@@ -1,9 +1,11 @@
 const express = require('express');
 const fetch = require('node-fetch');
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(express.json());
+app.use(cors()); 
 
 app.get('/random-quote', async (req, res) => {
   try {
@@ -19,3 +21,4 @@ app.get('/random-quote', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
