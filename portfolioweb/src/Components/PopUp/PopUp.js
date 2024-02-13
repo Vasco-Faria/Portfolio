@@ -30,7 +30,7 @@ const PopUp = () => {
         const currentDay = new Date().toLocaleDateString();
 
         if (!lastFetchTime || localStorage.getItem('lastDay') !== currentDay) {
-          const response = await fetch('/.netlify/functions/random-quote');
+          const response = await fetch('https://servervascomfaria.netlify.app/random-quote');
           if (!response.ok) {
             throw new Error('Failed to fetch quote');
           }
