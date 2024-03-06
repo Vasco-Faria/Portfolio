@@ -3,8 +3,7 @@ import './PopUp.css';
 
 const PopUp = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [quote, setQuote] = useState({ content: '', author: '' });
-
+ 
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true);
@@ -22,39 +21,7 @@ const PopUp = () => {
     }, 500);
   };
 
-  useEffect(() => {
-    const fetchQuote = async () => {
-      try {
-        const lastFetchTime = localStorage.getItem('lastFetchTime');
-        const currentTime = new Date().getTime();
-        const currentDay = new Date().toLocaleDateString();
 
-        if (!lastFetchTime || localStorage.getItem('lastDay') !== currentDay) {
-          const response = await fetch('https://servervascomfaria.netlify.app/random-quote');
-          if (!response.ok) {
-            throw new Error('Failed to fetch quote');
-          }
-          const data = await response.json();
-          setQuote({ content: data.content, author: data.author });
-
-          localStorage.setItem('lastFetchTime', currentTime);
-          localStorage.setItem('lastDay', currentDay);
-          localStorage.setItem('quoteContent', data.content);
-          localStorage.setItem('quoteAuthor', data.author);
-        } else {
-          const storedContent = localStorage.getItem('quoteContent');
-          const storedAuthor = localStorage.getItem('quoteAuthor');
-          if (storedContent && storedAuthor) {
-            setQuote({ content: storedContent, author: storedAuthor });
-          }
-        }
-      } catch (error) {
-        console.error(error.message);
-      }
-    };
-
-    fetchQuote();
-  }, []);
 
   return isVisible ? (
     <div className={`popup ${window.innerWidth < 1300 ? 'overlay' : ''}`}>
@@ -63,8 +30,8 @@ const PopUp = () => {
         &times;
       </button>
       <div className="content">
-        <p className='popup-content'>"{quote.content}"</p>
-        <p className='popup-author'>- {quote.author}</p>
+        <p className='popup-content'>"Life is very short and anxious for those who forget the past, neglect the present, and fear the future."</p>
+        <p className='popup-author'>- Seneca </p>
       </div>
     </div>
   ) : null;
