@@ -4,8 +4,8 @@ import { faLinkedin, faGithub, faFacebook, faInstagram } from '@fortawesome/free
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import VascoImg from '../../Assets/Vasco.jpeg';
 import ButtonDownload from '../../Components/ButtonDownload/ButtonDownload';
-import pdf1 from '../../Assets/Cvs/CV-Vasco-PT.pdf';
-import pdf2 from '../../Assets/Cvs/CV-Vasco-EN.pdf';
+import pdf1 from '../../Assets/Cvs/Vasco_Faria_CV_PT.pdf';
+import pdf2 from '../../Assets/Cvs/Vasco_Faria_CV_EN.pdf';
 import '@fortawesome/fontawesome-free/css/all.css';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
