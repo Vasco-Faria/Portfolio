@@ -32,7 +32,7 @@ const AboutMe = () => {
 
     const aboutMe1Props1 = {
         name: "Vasco Miguel Fernandes Faria",
-        age: "20",
+        age: "21",
         hometown: "Viana do Castelo, Portugal",
         principles: "Resilience, Continuous Learning, Family Focus",
         imageUrl: img1
@@ -42,7 +42,7 @@ const AboutMe = () => {
         currently: "Studying Computer Science Engineering BSc Degree",
         university: "Aveiro University",
         fluentIn: "Portuguese, English, Spanish, French",
-        hobbies: "Gym, Football",
+        hobbies: "Running, Gym, Football",
         imageUrl: img2
     };
 
