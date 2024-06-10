@@ -41,7 +41,7 @@
 }
 
 .name p:nth-child(2) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: 1rem;
     font-family: "Poppins", sans-serif;
     color:#ececec;
@@ -65,7 +65,7 @@
 }
 
 .age p:nth-child(2) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: 1rem;
     font-family: "Poppins", sans-serif;
     color:#ececec;
@@ -90,7 +90,7 @@
 }
 
 .hometown p:nth-child(2) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: 1rem;
     font-family: "Poppins", sans-serif;
     color:#ececec;
