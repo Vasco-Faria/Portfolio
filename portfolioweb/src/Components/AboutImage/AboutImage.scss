@@ -389,3 +389,63 @@ $transition-fast: .2s cubic-bezier(.77, 0, .175, 1);
 		transform: translate3d(0, 0, 0);
 	}
 }
+
+
+/* =Media Queries for Mobile
+------------------------------------- */
+@media (max-width: 1000px) {
+  .c-glitch {
+    height: 15rem;
+    width: 100%;
+  }
+
+  .c-ryanyu {
+    height: rem(15);
+    width: rem(15);
+
+    img {
+      height: rem(15);
+      width: rem(15);
+    }
+  }
+
+  .c-ryanyu__back::before {
+    width: rem(30);
+  }
+}
+
+@media (max-width: 768px) {
+ 
+
+  .c-ryanyu {
+    height: rem(10);
+    width: rem(10);
+
+    img {
+      height: rem(10);
+      width: rem(10);
+    }
+  }
+
+  .c-ryanyu__back::before {
+    width: rem(20);
+  }
+}
+
+@media (max-width: 480px) {
+ 
+
+  .c-ryanyu {
+    height: rem(8);
+    width: rem(8);
+
+    img {
+      height: rem(8);
+      width: rem(8);
+    }
+  }
+
+  .c-ryanyu__back::before {
+    width: rem(15);
+  }
+}
