@@ -17,9 +17,12 @@ const Projects = () => {
     { title: 'Youtube Database', description: 'Mysql database modeling for the YouTube platform. It enables users to upload, share, and view various types of content. Users can subscribe to others, like, comment on content, create playlists, and even subscribe to the premium service.', githublink: 'https://github.com/Vasco-Faria/BD/tree/main/Projeto_Final/APFT_107323_108536' , tech:["MySQL", "C#"] },
     { title: 'Load Balancer', description: 'Very simples HTTP/TCP Load Balancer. Implemented in Python3, single thread, using OS selector. The code contains 4 classes that implement different strategies to select the next back-end server.', githublink: 'https://github.com/Vasco-Faria/CD_Load_Balancer' , tech:["Python"]},
     { title: 'Coffe Machine Automation', description: 'Python script designed for coffee machine automation, simplifying coffee-making process.', githublink: 'project9.jpg',tech:["Python"] },
+    { title: 'PetTicket', description: 'Project focused on software testing and quality ', githublink: 'https://github.com/PeTicket/PeTicket',tech:["SpringBoot","JS","Selenium","Cucumber","SonarQube"] },
+    { title: 'Platform WisH (Where is Home)', description: 'Development of an innovative platform for location assessment and social support module to aid in housing search for Univeristy of Aveiro students', githublink: 'https://github.com/Wish-Where-is-Home',tech:["ReactJS", "Leaflet", "QGIS", "PostgresSQL"] },
+    { title: 'Workout_Tracker', description: 'Python script designed for coffee machine automation, simplifying coffee-making process.', githublink: 'project9.jpg',tech:["Flutter"] },
   ], []);
 
-  const categories = useMemo(() => ['Tab 1', 'Tab 2'], []);
+  const categories = useMemo(() => ['Tab 1', 'Tab 2','Tab 3'], []);
   const projectsPerPage = 6;
 
   const [activeTab, setActiveTab] = useState(categories[0]);
