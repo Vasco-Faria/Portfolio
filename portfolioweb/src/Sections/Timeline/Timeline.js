@@ -13,7 +13,7 @@ const Timeline = () =>{
     const timelineData = [
         { year: "2003", content: 'I was born on March 9, 2003. We all start from here...' },
         { year: "2018-2021", content: 'Scientific High School Degree', logo:AEPJBLogo},
-        { year: "2021-Currently", content: 'Computer Science Engineering BSc Degree', logo: UAlogo },
+        { year: "2021-2024", content: 'Computer Science Engineering BSc Degree', logo: UAlogo },
         { year: 'Jul-Sept 2023' , content:'Summer reinforcement as cashier/store operator', logo:ContinenteLogo},
         { year: "2023", content: 'Udemy Full Stack Web Development Bootcamp', logo:UdemyLogo },
         { year: "Present", content: 'Enjoying each day as if it were the last'}

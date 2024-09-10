@@ -19,7 +19,7 @@ const Projects = () => {
     { title: 'Coffe Machine Automation', description: 'Python script designed for coffee machine automation, simplifying coffee-making process.', githublink: 'project9.jpg',tech:["Python"] },
     { title: 'PetTicket', description: 'Project focused on software testing and quality ', githublink: 'https://github.com/PeTicket/PeTicket',tech:["SpringBoot","JS","Selenium","Cucumber","SonarQube"] },
     { title: 'Platform WisH (Where is Home)', description: 'Development of an innovative platform for location assessment and social support module to aid in housing search for Univeristy of Aveiro students', githublink: 'https://github.com/Wish-Where-is-Home',tech:["ReactJS", "Leaflet", "QGIS", "PostgresSQL"] },
-    { title: 'Workout_Tracker', description: 'Python script designed for coffee machine automation, simplifying coffee-making process.', githublink: 'project9.jpg',tech:["Flutter"] },
+    { title: 'Workout_Tracker', description: 'Personal Project focused on learning Flutter and mobile dev', githublink: 'project9.jpg',tech:["Flutter"] },
   ], []);
 
   const categories = useMemo(() => ['Tab 1', 'Tab 2','Tab 3'], []);
