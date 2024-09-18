@@ -52,8 +52,8 @@ const AboutMe = () => {
     };
 
     const aboutMe1Props2 = {
-        currently: "Studying Computer Science Engineering BSc Degree",
-        university: "Aveiro University",
+        currently: "Studying Computer Science Engineering MSc Degree",
+        university: "Universidade do Minho",
         fluentIn: "Portuguese, English, Spanish, French",
         hobbies: "Running, Gym, Football",
         imageUrl: img2
