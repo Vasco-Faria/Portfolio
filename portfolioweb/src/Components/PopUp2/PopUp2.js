@@ -27,6 +27,7 @@ const PopUp2 = ({ isVisible, onClose }) => {
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         allowFullScreen
         loading="lazy"
+        title="Best music" 
       ></iframe>
     </div>
   ) : null;
