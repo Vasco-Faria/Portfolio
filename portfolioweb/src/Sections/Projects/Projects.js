@@ -23,7 +23,7 @@ const Projects = () => {
     { title: 'Parallel Computing Optimization ', description: 'Optimization of computationally intensive code, improving performance and scalability for high-performance computing tasks.',githublink: 'https://github.com/Vasco-Faria/Cpar-TP',  tech:["OpenMP", "CUDA","MPI"] },
     { title:"Machine Learning for Alzheimer's Prediction", description:"Design and optimization of Machine Learning models", githublink:"",tech:["Python", "PyRadiomics", "Kagle"]},
     { title:"Moonshot deployment with Kubernets", description:"Deployment and monitoring of a cloud-native application ensuring scalability, reliability, and observability.", githublink:"https://github.com/Vasco-Faria/ASCN-project", tech:["GCP","K8","Ansible"]},
-    { title:"Serviço Over-the-top para entrega de multimédia", description:"Implementation of an OTT service for streaming and delivering multimedia content, using Python for client-server communication.", githublink:'https://github.com/Vasco-Faria/ESR--TP2', tech:["Python"]},
+    { title:"Over-the-top service for multimedia delivery", description:"Implementation of an OTT service for streaming and delivering multimedia content, using Python for client-server communication.", githublink:'https://github.com/Vasco-Faria/ESR--TP2', tech:["Python"]},
     { title:" WEB application for image processing", description:"Development of PictuRAS, a cloud-based web application for image processing, offering tools for editing and transforming photos.", githublink:"https://github.com/Vasco-Faria/PictuRAS", tech:["Vue","Nginx","Python","Docker"]}
   ], []);
 
