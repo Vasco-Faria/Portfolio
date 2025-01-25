@@ -21,6 +21,9 @@ function Navbar() {
         <nav className='navbar'>
             <h2 onClick={scrollToTop}>Vasco</h2>
             <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
+                <a href="https://gallery-websitevasco.netlify.app/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+                    Running
+                </a>
                 <Link activeClass="active" smooth spy to="AboutMe" onClick={closeMenu}>
                     About Me
                 </Link>
