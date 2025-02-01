@@ -17,6 +17,7 @@ const Timeline = () =>{
         { year: "2021-2024", content: 'Computer Science Engineering BSc Degree', logo: UAlogo },
         { year: 'Jul-Sept 2023' , content:'Summer reinforcement as cashier/store operator', logo:ContinenteLogo},
         { year: "2023", content: 'Udemy Full Stack Web Development Bootcamp', logo:UdemyLogo },
+        { year: "Jun 2024-Currently", content: 'University Project', logo: UAlogo },
         { year: "2024-Currently", content: 'Computer Science Engineering MSc Degree', logo: UMlogo },
         { year: "Present", content: 'Enjoying each day as if it were the last'}
       ];
