@@ -13,7 +13,7 @@ const AboutMe = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [animationClass, setAnimationClass] = useState('slide-in');
     const [highlightClass, setHighlightClass] = useState('');
-    const [isModalOpen, setIsModalOpen] = useState(false); // Control modal visibility
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -31,21 +31,26 @@ const AboutMe = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setHighlightClass(prev => (prev === 'bright' ? '' : 'bright'));
-        }, 5000); // every 5 seconds
+        }, 5000);
 
         return () => clearInterval(interval);
     }, []);
 
-    // Handle the click on the "Me" text to show the modal
-    const handleHighlightClick = () => {
-        if (highlightClass === 'bright') {
-            setIsModalOpen(true); // Show modal when "Me" is bright and clicked
+    // Calculate age based on birthdate
+    const calculateAge = (birthdate) => {
+        const birthDate = new Date(birthdate);
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
         }
+        return age;
     };
 
     const aboutMe1Props1 = {
         name: "Vasco Miguel Fernandes Faria",
-        age: "21",
+        age: calculateAge('2003-03-09'), // Set your birthdate here
         hometown: "Viana do Castelo, Portugal",
         principles: "Resilience, Continuous Learning, Family Focus",
         imageUrl: img1
@@ -67,6 +72,12 @@ const AboutMe = () => {
         setTimeout(() => {
             setAnimationClass(showAboutMe1 ? 'slide-in' : '');
         }, 1000);
+    };
+
+    const handleHighlightClick = () => {
+        if (highlightClass === 'bright') {
+            setIsModalOpen(true);
+        }
     };
 
     return (
