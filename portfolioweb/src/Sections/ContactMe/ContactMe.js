@@ -30,7 +30,7 @@ const ContactMe = () => {
                     </div>
                     <div className='mycvs'> 
                         <h3>My cvs</h3>
-                        <p>Last Update 20/01/2025</p>
+                        <p>Last Update 14/06/2025</p>
                         <div className='buttons-downloads'>
                             <ButtonDownload text="CV PT" fileName="CV-Vasco-PT.pdf" filePath={pdf1} />
                             <ButtonDownload text="CV EN" fileName="CV-Vasco-EN.pdf" filePath={pdf2} />
