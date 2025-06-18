@@ -12,7 +12,7 @@ const AboutMe = () => {
     const [buttonText, setButtonText] = useState('1/2');
     const [isVisible, setIsVisible] = useState(false);
     const [animationClass, setAnimationClass] = useState('slide-in');
-    const [highlightClass, setHighlightClass] = useState('');
+    // const [highlightClass, setHighlightClass] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const [ref, inView] = useInView({
@@ -74,11 +74,11 @@ const AboutMe = () => {
         }, 1000);
     };
 
-    const handleHighlightClick = () => {
-        if (highlightClass === 'bright') {
-            setIsModalOpen(true);
-        }
-    };
+    // const handleHighlightClick = () => {
+    //     if (highlightClass === 'bright') {
+    //         setIsModalOpen(true);
+    //     }
+    // };
 
     return (
         <div id="AboutMe" ref={ref} className={`AboutMe-Section ${isVisible ? 'fade-in' : ''}`}>
