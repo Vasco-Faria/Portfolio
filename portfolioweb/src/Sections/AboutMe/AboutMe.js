@@ -28,13 +28,13 @@ const AboutMe = () => {
     }, [inView]);
 
     // Toggle brightness effect every 5 seconds
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setHighlightClass(prev => (prev === 'bright' ? '' : 'bright'));
-        }, 5000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setHighlightClass(prev => (prev === 'bright' ? '' : 'bright'));
+    //     }, 5000);
 
-        return () => clearInterval(interval);
-    }, []);
+    //     return () => clearInterval(interval);
+    // }, []);
 
     // Calculate age based on birthdate
     const calculateAge = (birthdate) => {
@@ -83,7 +83,7 @@ const AboutMe = () => {
     return (
         <div id="AboutMe" ref={ref} className={`AboutMe-Section ${isVisible ? 'fade-in' : ''}`}>
             <h2>
-                About <span className={`highlight ${highlightClass}`} onClick={handleHighlightClick}>Me</span>
+                About <span className={`highlight ${highlightClass}`} >Me</span>
             </h2>
             <div className={`about ${animationClass} ${showAboutMe1 ? 'slide-in' : 'slide-out'}`}>
                 {showAboutMe1 && <AboutMe1 {...aboutMe1Props1} />}
