@@ -83,7 +83,7 @@ const AboutMe = () => {
     return (
         <div id="AboutMe" ref={ref} className={`AboutMe-Section ${isVisible ? 'fade-in' : ''}`}>
             <h2>
-                About <span className={`highlight ${highlightClass}`} >Me</span>
+                About <span>Me</span>
             </h2>
             <div className={`about ${animationClass} ${showAboutMe1 ? 'slide-in' : 'slide-out'}`}>
                 {showAboutMe1 && <AboutMe1 {...aboutMe1Props1} />}
